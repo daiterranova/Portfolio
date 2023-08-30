@@ -7,6 +7,9 @@ import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+import Header from './components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import NoPage from './components/NoPage'
 function App() {
 
   return (
@@ -15,11 +18,17 @@ function App() {
         <Grid item xs={12} md={4} lg={3} >
           <Profile />
         </Grid>
-        <Grid item xs >
+        <Grid item xs>
+          <Header />
           <NavMenu />
-          <Resume />
-          <Portfolio />
-          <Contact />
+          <Router>
+            <Routes>
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/' element={<Resume />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path="*" element={<NoPage />} />
+            </Routes>
+          </Router>
           <Footer />
         </Grid>
       </Grid>
