@@ -1,0 +1,22 @@
+.title{
+    color:var(--textHeadingColor);
+    font-size: var(--medium);
+    font-weight: var(--ultrabold);
+    text-transform: uppercase;
+}
+.description{
+    color:var(--textContentColor);
+    font-weight: var(--regular);
+    font-size:var(--normal) ;
+}
+.profile-image{
+    max-width: 100%;
+    /* chequear valores para forma foto */
+    /* margin-top: -10px; */
+    /* -webkit-clip-path:polygon(100% 0,100% 94%, 100% 94%,0  100%);
+    clip-path: polygon(100% 0,100% 94%, 100% 94%,0  100%); */
+    
+}
+.profile-image img{
+    width: 100%;
+}
