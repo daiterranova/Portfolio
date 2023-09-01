@@ -1,23 +1,38 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
+  /* colors */
+  --primary: rgb(26, 26, 26);
+  --on-primary: rgb(255, 255, 255);
+  --background: rgb(251, 251, 251);
+  --surface: rgb(235, 235, 235);
+  --on-surface-heading: rgb(0, 0, 0);
+  --on-surface-body:rgb(128, 128, 128);
+  --backgroundGradient: linear-gradient(to right,hsla(227, 79%, 58%,0.4),hsla(0, 79%, 58%,0.4),hsla(43, 100%, 50%,0.4),hsl(266, 100%, 64%));
+  /* fonts sizes and weights */
+  --normal: 16px;
+  --medium: 24px;
+  --large: 32px;
+  --extraLarge: 56px;
+  --light: 400;
+  --regular: 500;
+  --bold: 700;
+  --ultrabold:800;
+  /* rest of the vars */
+  --backgroundColor: var(--background);
+  --textHeadingColor:var(--on-surface-heading);
+  --textContentColor: var(--on-surface-body);
+  --borderRadius: 1rem;
+  --fontSize: var(--normal);
+  --fontSizeMedium: var(--medium);
+  --fontSizeLarge: var(--large);
+  --lineHeigthSmall: 22px;
+  --lineHeigthLarge: 29px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  /* display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
+  font-family: 'Inter', sans-serif;
+  background: var(--backgroundColor);
+  min-height: 100vh;
+  width: 100%;
 }
