@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import './profile.css'
+import CustomTimeline from "./Timeline";
+
 const containerStyles = {
   boxShadow: 3,
 }
@@ -12,8 +14,7 @@ const Profile = () => {
       <img src="src/assets/profile_photo.jpg" alt="profile image" />
     </Box>
     <Box className="profile-information">
-      aca va el timeline
-      {/* <Timeline /> */}
+      <CustomTimeline />
     </Box>
     <Button variant="contained">download resume</Button>
   </Box>)
