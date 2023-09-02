@@ -3,7 +3,7 @@
   --primary: rgb(26, 26, 26);
   --on-primary: rgb(255, 255, 255);
   --background: rgb(251, 251, 251);
-  --surface: rgb(235, 235, 235);
+  --surface: hsl(0, 0%, 95%);
   --on-surface-heading: rgb(0, 0, 0);
   --on-surface-body:rgb(128, 128, 128);
   --backgroundGradient: linear-gradient(to right,hsla(227, 79%, 58%,0.4),hsla(0, 79%, 58%,0.4),hsla(43, 100%, 50%,0.4),hsl(266, 100%, 64%));
