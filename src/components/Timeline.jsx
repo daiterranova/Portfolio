@@ -12,22 +12,23 @@ import './timeline.css'
 const getTimelineDotStyles = (header) => ({
     backgroundColor: header ? 'var(--primary)' : 'transparent',
     color: header ? 'var(--on-primary)' : 'var(--on-surface-heading)',
-    borderColor: 'var(--on-surface-heading)',
+    borderColor: 'var(--on-surface-heading)'
 });
 
 
-const CustomTimeline = ({ title, children, icon }) => {
+const CustomTimeline = ({ children, icon, title }) => {
 
 
     return (
         <Timeline sx={{
+            marginTop: '-2.5rem',
             [`& .${timelineItemClasses.root}:before`]: {
                 flex: 0,
                 padding: 0,
             },
         }}  >
             <TimelineItem className='timeline-header-icon'>
-                <TimelineSeparator sx={{ minHeight: '110px' }}>
+                <TimelineSeparator sx={{ minHeight: '100px' }}>
                     <TimelineDot sx={getTimelineDotStyles(true)}>
                         {icon}
                     </TimelineDot>
@@ -43,7 +44,7 @@ const CustomTimeline = ({ title, children, icon }) => {
 }
 
 export const CustomTimelineSeparator = () => (
-    <TimelineSeparator sx={{ paddingLeft: '10px' }}>
+    <TimelineSeparator sx={{ paddingLeft: '1.1rem' }}>
         <TimelineDot variant='outlined' sx={getTimelineDotStyles(false)} /* color='var(--on-primary)' */ />
         <TimelineConnector />
     </TimelineSeparator>
