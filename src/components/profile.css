@@ -1,6 +1,7 @@
 .title{
     font-weight: var(--ultrabold);
     text-transform: uppercase;
+    padding: 1rem 0 0 1rem;
 }
 .title-color{
     color:var(--textHeadingColor);
@@ -12,6 +13,7 @@
 .description{
     font-weight: var(--bold);
     font-size:var(--normal) ;
+    padding: 0 0 1rem 1rem;
 }
 .profile-image{
     max-width: 100%;

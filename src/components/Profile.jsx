@@ -25,7 +25,7 @@ export const CustomTimelineItemData = ({ title, text, link }) => (
 
 const Profile = () => {
   return (<Box sx={containerStyles} className="profile container">
-    <Typography variant="h5" className="title title-color">{name}</Typography>
+    <Typography variant="h6" className="title title-color ">{name}</Typography>
     <Typography className="description description-color" >{role}</Typography>
     <Box className="profile-image">
       <img src="src/assets/profile_photo.jpg" alt="profile image" />
