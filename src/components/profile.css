@@ -1,12 +1,16 @@
 .title{
-    color:var(--textHeadingColor);
-    font-size: var(--medium);
     font-weight: var(--ultrabold);
     text-transform: uppercase;
 }
-.description{
+.title-color{
+    color:var(--textHeadingColor);
+}
+.description-color{
     color:var(--textContentColor);
-    font-weight: var(--regular);
+}
+
+.description{
+    font-weight: var(--bold);
     font-size:var(--normal) ;
 }
 .profile-image{
@@ -19,4 +23,10 @@
 }
 .profile-image img{
     width: 100%;
+}
+.link{
+    text-decoration: none;
+}
+.profile-information{
+    font-size: 5px;
 }
