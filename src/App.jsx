@@ -13,8 +13,8 @@ import NoPage from './components/NoPage'
 function App() {
 
   return (
-    <Container sx={{ marginTop: '5%' }}>
-      <Grid container spacing={6}>
+    <Container sx={{ marginTop: '7%' }}>
+      <Grid container sx={{ gap: '4rem' }}>
         <Grid item xs={12} md={4} lg={3} >
           <Profile />
         </Grid>
