@@ -8,9 +8,16 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import { name, role, socials, email } from "../utils/resumeData";
 import Face3Icon from '@mui/icons-material/Face3';
 import { CustomTimelineSeparator } from "./Timeline";
-
+import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
+import CustomButton from "./CustomButton";
 const containerStyles = {
   boxShadow: 3,
+  display: 'flex',
+  alignItems:'center',
+  flexDirection:'column',
+  paddingBottom:'2rem'
 }
 
 export const CustomTimelineItemData = ({ title, text, link }) => (
@@ -39,7 +46,7 @@ const Profile = () => {
         ))}
       </CustomTimeline>
     </Box>
-    <Button variant="contained">download resume</Button>
+    <CustomButton text="download CV" icon={<DownloadForOfflineIcon />} />
   </Box>)
 };
 
