@@ -1,6 +1,7 @@
 :root {
   /* colors */
   --primary: rgb(26, 26, 26);
+  --secondary:rgba(63, 100, 234, 0.43);
   --on-primary: rgb(255, 255, 255);
   --background: rgb(251, 251, 251);
   --surface: hsl(0, 0%, 95%);
@@ -40,5 +41,4 @@ body {
   background-color: var(--surface);
   max-width: 100%;
   border-radius: var(--borderRadius);
-  padding:1rem,
 }
