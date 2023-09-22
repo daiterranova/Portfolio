@@ -110,7 +110,7 @@ const Header = ({icon}) => {
                   {socials[key].icon}
                 </IconButton>
                 )} */}
-            <CustomButton text='Hire me'  icon={<TelegramIcon/>}/>
+            <CustomButton text='Get in touch' icon={<TelegramIcon/>}/>
             </Box>              
           </Toolbar>
         </Container>
