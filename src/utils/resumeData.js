@@ -17,7 +17,8 @@ const profileData =  {
             text: 'Linkedin profile',
             icon: LinkedInIcon
         }  
-    }    
+    },
+    about: 'Junior Software Developer with a solid foundation in system design, installation, and maintenance. Demonstrated ability to work both independently and collaboratively in cross-functional teams.\n Strong background in risk analysis, exceptional attention to detail, and dedication to customer service.'    
 }
 
-export const { name, role, title, socials, email } = profileData
+export const { name, role, title, socials, email, about } = profileData
