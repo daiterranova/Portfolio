@@ -38,7 +38,7 @@ const Resume = () => {
         <Grid item xs={12}> 
           <Typography gutterBottom  variant="h5">Resume</Typography>
         </Grid>
-        <Grid container item>
+        <Grid container item  rowSpacing={{ xs: 5, sm: 6, md: 7 }}>
           <Grid item xs={12} md={6}> 
             <CustomTimeline  title='Work Experience' icon={<WorkIcon/>}>
                 {experiences.map((experience) => (
@@ -47,11 +47,11 @@ const Resume = () => {
             </CustomTimeline>
           </Grid>
           <Grid item xs={12} md={6}> 
-          <CustomTimeline  title='Education' icon={<SchoolIcon/>}>
-                {education.map((education) => (
-                  <CustomTimelineItemData title={education.title} text={education.description} date={education.date} education={true} profile={false} />
-                  ))}
-            </CustomTimeline>
+            <CustomTimeline  title='Education' icon={<SchoolIcon/>}>
+                  {education.map((education) => (
+                    <CustomTimelineItemData title={education.title} text={education.description} date={education.date} education={true} profile={false} />
+                    ))}
+              </CustomTimeline>
           </Grid>
         </Grid>
         
