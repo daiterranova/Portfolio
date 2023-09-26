@@ -43,8 +43,8 @@ const CustomTimeline = ({ children, icon, title }) => {
     );
 }
 
-export const CustomTimelineSeparator = () => (
-    <TimelineSeparator sx={{ paddingLeft: '1.1rem' }}>
+export const CustomTimelineSeparator = ({profile}) => (
+    <TimelineSeparator sx={{paddingLeft: profile ?  '1.1rem' : '.75rem' }}>
         <TimelineDot variant='outlined' sx={getTimelineDotStyles(false)} /* color='var(--on-primary)' */ />
         <TimelineConnector />
     </TimelineSeparator>
