@@ -21,17 +21,17 @@ const profileData =  {
     about: 'Junior Software Developer with a solid foundation in system design, installation, and maintenance. Demonstrated ability to work both independently and collaboratively in cross-functional teams.\n Strong background in risk analysis, exceptional attention to detail, and dedication to customer service.',
     experiences:[
         { title:'Frontend Developer, Presidencia de la Nación, Buenos Aires',
-        date:'FEBRUARY 2023 — PRESENT',
+        date:'Feb 2023 — present',
         description:'Component development Implementation of functionalities Bug Fixing and troubleshooting Build website layouts Working with databases Version control and collaboration.'},
-        {title:'Executive Assistant, Presidencia de la Nación, Buenos Aires', date:'SEPTEMBER 2020 — NOVEMBER 2021', description:' Communication between internal departments, Document management, agenda planning, and departmental tasks, Task assignment and supervision of execution.'},
-        {title:'Claims Analyst, Assist Card ', date:'AUGUST 2019 - APRIL 2021', description:'Communication with policyholders and providers. Evaluation and processing of claims. Cost analysis and reserves. Confict handling.'},
-        {title:'Claims Analyst, AGS Comercializadora SRL, Buenos Aires', date:'FEBRUARY 2015 — AUGUST 2019', description:'Communication with policyholders and providersEvaluation and processing of claimsCost analysis and reserves Conflict handling '},
+        {title:'Executive Assistant, Presidencia de la Nación, Buenos Aires', date:'Sep 2020 — Nov 2021', description:' Communication between internal departments, Document management, agenda planning, and departmental tasks, Task assignment and supervision of execution.'},
+        {title:'Claims Analyst, Assist Card ', date:'Aug 2019 - Apr 2021', description:'Communication with policyholders and providers. Evaluation and processing of claims. Cost analysis and reserves. Confict handling.'},
+        {title:'Claims Analyst, AGS Comercializadora SRL, Buenos Aires', date:'Feb 2015 — Aug 2019', description:'Communication with policyholders and providersEvaluation and processing of claimsCost analysis and reserves Conflict handling '},
     ],
     education:[
-        {title:'Certified Tech Developer, Digital House , remote', date:'JULY 2023 — present', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House'},
-        {title:'Full Stack Developer Path, Open Bootcamp ', date:'JULY 2022 - DECEMBER 2022', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.'},
-        {title:'Frontend Developer Path, Platzi', date:'APRIL 2022 - OCTOBER 2022', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.'},
-        {title:'Learn Javascript Course, Code Academy', date:'NOVEMBER 2021 - DECEMBER 2021', description:''},
+        {title:'Certified Tech Developer, Digital House , remote', date:'Jul 2023 — present', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House'},
+        {title:'Full Stack Developer Path, Open Bootcamp ', date:'Jul 2022 - Dec 2022', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.'},
+        {title:'Frontend Developer Path, Platzi', date:'Apr 2022 - Oct 2022', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.'},
+        {title:'Learn Javascript Course, Code Academy', date:'Nov 2021 - Dec 2021', description:''},
     ]    
 }
 
