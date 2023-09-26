@@ -20,12 +20,21 @@ const containerStyles = {
   paddingBottom:'2rem'
 }
 
-export const CustomTimelineItemData = ({ title, text, link }) => (
+export const CustomTimelineItemData = ({ title, text, link, experience, education, date }) => (
   <TimelineItem sx={{ minHeight: '3rem', width: '100%' }}>
     <CustomTimelineSeparator />
     <TimelineContent sx={{ flexWrap: 'nowrap' }}>
-      {link ? <Typography fontSize={15} fullWidth ><span>{title}: <a className='link description-color' href={link} target="_blank">{text}</a></span></Typography>
-        : <Typography fontSize={15} className="description-color" ><span className="title-color">{title}:</span> {text}</Typography>}
+      {link ?
+         <Typography fontSize={15} fullWidth ><span>{title}: <a className='link description-color' href={link} target="_blank">{text}</a></span></Typography>
+        : 
+        experience || education ? 
+        <Box>
+             <Typography fontSize={14} className="title-color" >{title} </Typography>
+             <Typography fontSize={11} className="description-color">{date} </Typography>
+             <Typography fontSize={13} className="description-color">{text} </Typography>
+        </Box> 
+          : 
+        <Typography fontSize={15} className="description-color" ><span className="title-color">{title}:</span> {text}</Typography>}
     </TimelineContent>
   </TimelineItem>
 )
