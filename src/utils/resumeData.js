@@ -56,7 +56,7 @@ const profileData =  {
     projects:[
         {
         tag:'HTML/CSS',
-        image:'../assets/trello.png',
+        image:'src/assets/trello.png',
         title:'Trello Landing Page',
         description:'team project',
         links:[
@@ -65,7 +65,7 @@ const profileData =  {
         },
         {
             tag:'HTML/CSS',
-            image:'../assets/yard-sale.png',
+            image:'src/assets/yard-sale.png',
             title:'Yard Sale',
             description:'individual components of e-commerce website',
             links:[
@@ -74,7 +74,7 @@ const profileData =  {
         },
         {
             tag:'HTML/CSS',
-            image:'../assets/personas-it.png',
+            image:'src/assets/personas-it.png',
             title:'Personas IT Landing Page',
             description:'Landing Page for Personas IT Company',
             links:[
@@ -82,26 +82,26 @@ const profileData =  {
             ]
         },
         {
-        tag:'JS',
-        image:'../assets/personas-it.png',
-        title:'TICTACTOE',
-        description:'tictactoe game',
-        links:[
-            {link:'https://github.com/daiterranova', icon: GitHubIcon}
-        ]
+            tag:'JS',
+            image:'src/assets/tictactoe.png',
+            title:'TICTACTOE',
+            description:'tictactoe game',
+            links:[
+                {link:'https://github.com/daiterranova', icon: GitHubIcon}
+            ]
         },
         {
-        tag:'React',
-        image:'../assets/meals.png',
-        title:'Meals finder',
-        description:'finder of recipes consuming meals API',
-        links:[
-            {link:'https://github.com/daiterranova', icon: GitHubIcon}
-        ]
+            tag:'React',
+            image:'src/assets/meals.png',
+            title:'Meals finder',
+            description:'finder of recipes consuming meals API',
+            links:[
+                {link:'https://github.com/daiterranova', icon: GitHubIcon}
+            ]
         },
         {
         tag:'HTML/CSS',
-        image:'../assets/sports.png',
+        image:'src/assets/sports.png',
         title:'Sports Landing Page',
         description:'Team project for Digital House subject',
         links:[
@@ -110,7 +110,7 @@ const profileData =  {
         },
         {
         tag:'React',
-        image:'../assets/team-member.png',
+        image:'src/assets/team-member.png',
         title:'Team Member Allocation',
         description:'team allocator app',
         links:[
@@ -119,7 +119,7 @@ const profileData =  {
         },
         {
         tag:'React',
-        image:'../assets/stocks.png',
+        image:'src/assets/stocks.png',
         title:'Stocks App',
         description:'stacking app',
         links:[
