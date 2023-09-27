@@ -66,16 +66,25 @@ const Resume = () => {
         <Grid item container  sx={{gap:'1rem', justifyContent:'center'}} > 
             {technologies.map((tech, index) => (
               <Grid item key={index} className="card" boxShadow={3}>
-                  <FontAwesomeIcon icon={tech.icon} size='2xl' />
+                  <FontAwesomeIcon icon={tech.icon} size='xl' />
                   <Typography fontSize={16} className="title-color" >{tech.title} </Typography>
               </Grid>
             ))}
         </Grid>
       </Grid>
  
-      <Grid container item>
-        <Grid item> <Typography></Typography></Grid>
-        <Grid item>skills</Grid>
+      <Grid container item rowSpacing={2}>
+      <Grid item > 
+          <Typography gutterBottom  variant="h5">Soft Skills</Typography>
+        </Grid>
+        <Grid item container  sx={{gap:'1rem', justifyContent:'center'}} > 
+            {softSkills.map((skill, index) => (
+              <Grid item xs={3} key={index} className="card card-bgcolor" boxShadow={3}>
+                  <FontAwesomeIcon icon={skill.icon} size='xl' />
+                   <Typography fontSize={16} className="title-color" >{skill.title} </Typography>
+              </Grid>
+            ))}
+        </Grid>
       </Grid>
     </Grid>
 
