@@ -53,3 +53,6 @@ body {
  border-radius: var(--borderRadius);
  padding: .3rem .1rem;
 }
+.card-bgcolor{
+  background-color: var(--surface);
+}
