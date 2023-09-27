@@ -10,7 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Height } from "@mui/icons-material";
 
-const pages = [{name:'Resume', path:'/'}, {name:'Portfolio', path:'/portfolio'},{name:'Contact', path:'/contact'}];
+const pages = [{name:'Resume', path:'/'}, {name:'Portfolio', path:'/portfolio'}];
 
 const Header = ({icon}) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
