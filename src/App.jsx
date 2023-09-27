@@ -2,10 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import { Container, Grid } from '@mui/material'
 import Profile from './components/Profile'
-import NavMenu from './components/NavMenu'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
-import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -20,12 +18,10 @@ function App() {
         </Grid>
         <Grid item xs>
           <Header />
-          <NavMenu />
           <Router>
             <Routes>
-              <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/' element={<Resume />} />
-              <Route path='/contact' element={<Contact />} />
+              <Route path='/portfolio' element={<Portfolio />} />
               <Route path="*" element={<NoPage />} />
             </Routes>
           </Router>
