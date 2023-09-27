@@ -1,13 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { faReact,faGit, faGithub, faDocker, faPython, faFigma, faJs } from '@fortawesome/free-brands-svg-icons'; 
-import PsychologyIcon from '@mui/icons-material/Psychology';
-import React from 'react';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import HearingIcon from '@mui/icons-material/Hearing';
-import EngineeringIcon from '@mui/icons-material/Engineering';
-import Groups2Icon from '@mui/icons-material/Groups2';
-import { faPalette } from '@fortawesome/free-solid-svg-icons'; // Import a valid solid icon for "MUI Library"
+import { faPalette, faEye, faGears, faHandHoldingHand , faLinesLeaning, faMagnifyingGlass, faEarListen} from '@fortawesome/free-solid-svg-icons';
 
 const profileData =  {
     name: 'Daiana Terranova',
@@ -55,12 +49,12 @@ const profileData =  {
         
     ],
     softSkills:[
-        {title:'Analytical Thinking', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House',icon:  PsychologyIcon},
-        {title:'Attention to detail ', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.',icon: VisibilityIcon},
-        {title:'Active listening', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.',icon:  HearingIcon},
-        {title:'Resilience', description:'', icon:  VisibilityIcon},
-        {title:'Adaptability', description:'', icon:  EngineeringIcon},
-        {title:'Team Player', description:'', icon: Groups2Icon},
+        {title:'Analytical Thinking', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House',icon:  faMagnifyingGlass},
+        {title:'Attention to detail ', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.',icon: faEye},
+        {title:'Active listening', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.',icon:  faEarListen},
+        {title:'Resilience', description:'', icon:  faLinesLeaning},
+        {title:'Adaptability', description:'', icon:  faGears},
+        {title:'Team Player', description:'', icon: faHandHoldingHand},
     ]
 }
 
