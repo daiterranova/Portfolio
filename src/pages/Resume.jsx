@@ -2,11 +2,13 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { about } from "../utils/resumeData";
 import CustomTimeline from "../components/Timeline";
-import { experiences, education } from "../utils/resumeData";
+import { experiences, education, softSkills, technologies } from "../utils/resumeData";
 import '../components/profile.css'
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import {CustomTimelineItemData} from '../components/Profile'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Resume = () => {
 
@@ -56,15 +58,33 @@ const Resume = () => {
         </Grid>
         
      </Grid>
-    {/* services */}
-    <Grid container item>
-        <Grid item> <Typography></Typography></Grid>
-        <Grid item> cards</Grid>
+    {/* Technologies */}
+    <Grid container rowSpacing={2} >
+        <Grid item > 
+          <Typography gutterBottom  variant="h5">Technologies</Typography>
+        </Grid>
+        <Grid item container  sx={{gap:'1rem', justifyContent:'center'}} > 
+            {technologies.map((tech, index) => (
+              <Grid item key={index} className="card" boxShadow={3}>
+                  <FontAwesomeIcon icon={tech.icon} size='xl' />
+                  <Typography fontSize={16} className="title-color" >{tech.title} </Typography>
+              </Grid>
+            ))}
+        </Grid>
       </Grid>
-    {/* skills */}
-      <Grid container item>
-        <Grid item> <Typography></Typography></Grid>
-        <Grid item>skills</Grid>
+ 
+      <Grid container item rowSpacing={2}>
+      <Grid item > 
+          <Typography gutterBottom  variant="h5">Soft Skills</Typography>
+        </Grid>
+        <Grid item container  sx={{gap:'1rem', justifyContent:'center'}} > 
+            {softSkills.map((skill, index) => (
+              <Grid item xs={3} key={index} className="card card-bgcolor" boxShadow={3}>
+                  <FontAwesomeIcon icon={skill.icon} size='xl' />
+                   <Typography fontSize={16} className="title-color" >{skill.title} </Typography>
+              </Grid>
+            ))}
+        </Grid>
       </Grid>
     </Grid>
 

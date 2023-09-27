@@ -1,6 +1,8 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import React from 'react';
+import { faReact,faGit, faGithub, faDocker, faPython, faFigma, faJs } from '@fortawesome/free-brands-svg-icons'; 
+import { faPalette, faEye, faGears, faHandHoldingHand , faLinesLeaning, faMagnifyingGlass, faEarListen} from '@fortawesome/free-solid-svg-icons';
+
 const profileData =  {
     name: 'Daiana Terranova',
     role: 'Frontend Web Developer',
@@ -32,7 +34,28 @@ const profileData =  {
         {title:'Full Stack Developer Path, Open Bootcamp ', date:'Jul 2022 - Dec 2022', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.'},
         {title:'Frontend Developer Path, Platzi', date:'Apr 2022 - Oct 2022', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.'},
         {title:'Learn Javascript Course, Code Academy', date:'Nov 2021 - Dec 2021', description:''},
-    ]    
+    ],
+    technologies:[
+  
+        { title: 'React.js', icon: faReact },
+        { title: 'MUI Library', icon: faPalette },
+        { title: 'Git', icon: faGit },
+        { title: 'Github', icon: faGithub },
+        { title: 'Docker', icon: faDocker },
+        { title: 'Python', icon: faPython },
+        { title: 'Figma', icon: faFigma },
+        { title: 'Javascript', icon: faJs },
+
+        
+    ],
+    softSkills:[
+        {title:'Analytical Thinking', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House',icon:  faMagnifyingGlass},
+        {title:'Attention to detail ', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.',icon: faEye},
+        {title:'Active listening', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.',icon:  faEarListen},
+        {title:'Resilience', description:'', icon:  faLinesLeaning},
+        {title:'Adaptability', description:'', icon:  faGears},
+        {title:'Team Player', description:'', icon: faHandHoldingHand},
+    ]
 }
 
-export const { name, role, title, socials, email, about, education, experiences } = profileData
+export const { name, role, title, socials, email, about, education, experiences, softSkills, technologies } = profileData
