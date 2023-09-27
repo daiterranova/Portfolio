@@ -51,6 +51,7 @@ const Portfolio = () => {
       </Grid>
       <Grid container item spacing={3} alignItems='center' justifyContent='center' >
         {projects.map((project) => (
+          tabValue == project.tag  || tabValue == 'All' ?
           <Grid container item xs={6} key={project.image}>
             <Grow in timeout={1000}>
               <Card sx={{ width:'100%' }}>
@@ -60,6 +61,7 @@ const Portfolio = () => {
                         height="140"
                         image={project.image}
                         alt={project.title}
+                        title={project.title}
                       />
                       <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
@@ -73,6 +75,7 @@ const Portfolio = () => {
               </Card>
             </Grow>
           </Grid>
+          : null
         ))}
       </Grid>
     </Grid>
