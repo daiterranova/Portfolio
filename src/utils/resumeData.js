@@ -1,6 +1,14 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { faReact,faGit, faGithub, faDocker, faPython, faFigma, faJs } from '@fortawesome/free-brands-svg-icons'; 
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import React from 'react';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import HearingIcon from '@mui/icons-material/Hearing';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import Groups2Icon from '@mui/icons-material/Groups2';
+import { faPalette } from '@fortawesome/free-solid-svg-icons'; // Import a valid solid icon for "MUI Library"
+
 const profileData =  {
     name: 'Daiana Terranova',
     role: 'Frontend Web Developer',
@@ -32,7 +40,28 @@ const profileData =  {
         {title:'Full Stack Developer Path, Open Bootcamp ', date:'Jul 2022 - Dec 2022', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.'},
         {title:'Frontend Developer Path, Platzi', date:'Apr 2022 - Oct 2022', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.'},
         {title:'Learn Javascript Course, Code Academy', date:'Nov 2021 - Dec 2021', description:''},
-    ]    
+    ],
+    technologies:[
+  
+        { title: 'React.js', icon: faReact },
+        { title: 'MUI Library', icon: faPalette },
+        { title: 'Git', icon: faGit },
+        { title: 'Github', icon: faGithub },
+        { title: 'Docker', icon: faDocker },
+        { title: 'Python', icon: faPython },
+        { title: 'Figma', icon: faFigma },
+        { title: 'Javascript', icon: faJs },
+
+        
+    ],
+    softSkills:[
+        {title:'Analytical Thinking', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House',icon:  PsychologyIcon},
+        {title:'Attention to detail ', description:'Contents: Python, Javascript, CSS and HTML, Docker, SQL.',icon: VisibilityIcon},
+        {title:'Active listening', description:'Courses taken: Curso Practico de Frontend, Curso teórico de Frontend, Curso Básico de Programación.',icon:  HearingIcon},
+        {title:'Resilience', description:'', icon:  VisibilityIcon},
+        {title:'Adaptability', description:'', icon:  EngineeringIcon},
+        {title:'Team Player', description:'', icon: Groups2Icon},
+    ]
 }
 
-export const { name, role, title, socials, email, about, education, experiences } = profileData
+export const { name, role, title, socials, email, about, education, experiences, softSkills, technologies } = profileData
