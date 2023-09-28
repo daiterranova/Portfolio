@@ -36,7 +36,6 @@ const profileData =  {
         {title:'Learn Javascript Course, Code Academy', date:'Nov 2021 - Dec 2021', description:''},
     ],
     technologies:[
-  
         { title: 'React.js', icon: faReact },
         { title: 'MUI Library', icon: faPalette },
         { title: 'Git', icon: faGit },
@@ -45,8 +44,6 @@ const profileData =  {
         { title: 'Python', icon: faPython },
         { title: 'Figma', icon: faFigma },
         { title: 'Javascript', icon: faJs },
-
-        
     ],
     softSkills:[
         {title:'Analytical Thinking', description:'Curriculum designed and created by the companies Mercado Libre and Globant in collaboration with Digital House',icon:  faMagnifyingGlass},
@@ -55,7 +52,81 @@ const profileData =  {
         {title:'Resilience', description:'', icon:  faLinesLeaning},
         {title:'Adaptability', description:'', icon:  faGears},
         {title:'Team Player', description:'', icon: faHandHoldingHand},
+    ],
+    projects:[
+        {
+        tag:'HTML/CSS',
+        image:'src/assets/trello.png',
+        title:'Trello Landing Page',
+        description:'team project',
+        links:[
+            {link:'https://github.com/daiterranova/landing-page-trello', icon: faGithub }
+        ]
+        },
+        {
+            tag:'HTML/CSS',
+            image:'src/assets/yard-sale.png',
+            title:'Yard Sale',
+            description:'individual components of e-commerce website',
+            links:[
+                {link:'https://github.com/daiterranova/Yard-Sale', icon: GitHubIcon}
+            ]
+        },
+        {
+            tag:'HTML/CSS',
+            image:'src/assets/personas-it.png',
+            title:'Personas IT Landing Page',
+            description:'Landing Page for Personas IT Company',
+            links:[
+                {link:'https://github.com/daiterranova/PersonasIT-First-Challenge', icon: faGithub}
+            ]
+        },
+        {
+            tag:'JS',
+            image:'src/assets/tictactoe.png',
+            title:'TICTACTOE',
+            description:'tictactoe game',
+            links:[
+                {link:'https://github.com/daiterranova/tictactoe', icon: faGithub}
+            ]
+        },
+        {
+            tag:'React',
+            image:'src/assets/meals.png',
+            title:'Meals finder',
+            description:'finder of recipes consuming meals API',
+            links:[
+                {link:'https://github.com/daiterranova/Meals-Application', icon: faGithub}
+            ]
+        },
+        {
+        tag:'HTML/CSS',
+        image:'src/assets/sports.png',
+        title:'Sports Landing Page',
+        description:'Team project for Digital House subject',
+        links:[
+            {link:'https://github.com/daiterranova/sportit', icon: faGithub}
+        ]
+        },
+        {
+        tag:'React',
+        image:'src/assets/team-member.png',
+        title:'Team Member Allocation',
+        description:'team allocator app',
+        links:[
+            {link:'https://github.com/daiterranova/Team-Member-Allocation', icon: faGithub}
+        ]
+        },
+        {
+        tag:'React',
+        image:'src/assets/stocks.png',
+        title:'Stocks App',
+        description:'stacking app',
+        links:[
+            {link:'https://github.com/daiterranova/Stocks', icon: faGithub}
+        ]
+        },
     ]
 }
 
-export const { name, role, title, socials, email, about, education, experiences, softSkills, technologies } = profileData
+export const { name, role, title, socials, email, about, education, experiences, softSkills, technologies, projects } = profileData
