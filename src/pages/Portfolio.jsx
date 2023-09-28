@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import Box from '@mui/material/Box';
-import { Grid, Typography, Tabs, Tab, Card, CardActionArea, CardMedia, CardContent, Grow } from '@mui/material';
+import React, { useEffect, useState } from "react";
+import { Grid, Typography, Tabs, Tab, Card, CardActionArea, CardMedia, CardContent, Grow, Dialog, DialogTitle, DialogActions, DialogContent, Button } from '@mui/material';
 import { projects } from "../utils/resumeData";
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState('All');
+  const [projectD, setProjectD] = useState(false);
 
   const handleChange = (event, newValue) => {
     setTabValue(newValue);
   };
-
+  const handleClose = () => {
+    setProjectD(false)  
+  };
 
   const containerStyles ={
     boxShadow: 3,
@@ -19,6 +20,7 @@ const Portfolio = () => {
     gap:'2rem',
     padding:'2rem'
   }
+
 
   return (
     <Grid container className="container" sx={containerStyles}>
@@ -34,7 +36,7 @@ const Portfolio = () => {
           aria-label="scrollable auto tabs"
           sx={{
             '& .MuiTabs-indicator': {
-              backgroundColor: 'var(--secondary)', // Change indicator color here
+              backgroundColor: 'var(--secondary)',
             },
             '& .MuiTab-root': {
               color: 'var(--primary)', 
@@ -54,7 +56,7 @@ const Portfolio = () => {
           tabValue == project.tag  || tabValue == 'All' ?
           <Grid container item xs={6} key={project.image}>
             <Grow in timeout={1000}>
-              <Card sx={{ width:'100%' }}>
+              <Card sx={{ width:'100%' }} onClick={() => { setProjectD(project)}}>
                     <CardActionArea>
                       <CardMedia
                         component="img"
@@ -78,6 +80,16 @@ const Portfolio = () => {
           : null
         ))}
       </Grid>
+      <Dialog open={projectD} onClose={handleClose} >
+        <DialogTitle onClose={handleClose}>{projectD.title}</DialogTitle>
+        <img src={projectD.image} alt={projectD.title}/>
+        <DialogContent>{projectD.description}</DialogContent>
+        <DialogActions>
+        {projectD?.links?.map((link, index) => (
+          <Button key={index} href={link.link} target="_blank" onClick={handleClose}>Go to project</Button> 
+          ))}
+        </DialogActions>
+      </Dialog>
     </Grid>
    
 )
