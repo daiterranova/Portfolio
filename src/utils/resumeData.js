@@ -60,7 +60,7 @@ const profileData =  {
         title:'Trello Landing Page',
         description:'team project',
         links:[
-            {link:'https://github.com/daiterranova', icon: GitHubIcon }
+            {link:'https://github.com/daiterranova/landing-page-trello', icon: faGithub }
         ]
         },
         {
@@ -69,7 +69,7 @@ const profileData =  {
             title:'Yard Sale',
             description:'individual components of e-commerce website',
             links:[
-                {link:'https://github.com/daiterranova', icon: GitHubIcon}
+                {link:'https://github.com/daiterranova/Yard-Sale', icon: GitHubIcon}
             ]
         },
         {
@@ -78,7 +78,7 @@ const profileData =  {
             title:'Personas IT Landing Page',
             description:'Landing Page for Personas IT Company',
             links:[
-                {link:'https://github.com/daiterranova', icon: GitHubIcon}
+                {link:'https://github.com/daiterranova/PersonasIT-First-Challenge', icon: faGithub}
             ]
         },
         {
@@ -87,7 +87,7 @@ const profileData =  {
             title:'TICTACTOE',
             description:'tictactoe game',
             links:[
-                {link:'https://github.com/daiterranova', icon: GitHubIcon}
+                {link:'https://github.com/daiterranova/tictactoe', icon: faGithub}
             ]
         },
         {
@@ -96,7 +96,7 @@ const profileData =  {
             title:'Meals finder',
             description:'finder of recipes consuming meals API',
             links:[
-                {link:'https://github.com/daiterranova', icon: GitHubIcon}
+                {link:'https://github.com/daiterranova/Meals-Application', icon: faGithub}
             ]
         },
         {
@@ -105,7 +105,7 @@ const profileData =  {
         title:'Sports Landing Page',
         description:'Team project for Digital House subject',
         links:[
-            {link:'https://github.com/daiterranova', icon: GitHubIcon}
+            {link:'https://github.com/daiterranova/sportit', icon: faGithub}
         ]
         },
         {
@@ -114,7 +114,7 @@ const profileData =  {
         title:'Team Member Allocation',
         description:'team allocator app',
         links:[
-            {link:'https://github.com/daiterranova', icon: GitHubIcon}
+            {link:'https://github.com/daiterranova/Team-Member-Allocation', icon: faGithub}
         ]
         },
         {
@@ -123,7 +123,7 @@ const profileData =  {
         title:'Stocks App',
         description:'stacking app',
         links:[
-            {link:'https://github.com/daiterranova', icon: GitHubIcon}
+            {link:'https://github.com/daiterranova/Stocks', icon: faGithub}
         ]
         },
     ]
