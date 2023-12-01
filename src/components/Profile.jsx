@@ -15,31 +15,32 @@ import CustomButton from "./CustomButton";
 const containerStyles = {
   boxShadow: 3,
   display: 'flex',
-  alignItems:'center',
-  flexDirection:'column',
-  paddingBottom:'2rem'
+  alignItems: 'center',
+  flexDirection: 'column',
+  paddingBottom: '2rem'
 }
 
 export const CustomTimelineItemData = ({ title, text, link, experience, education, date, profile }) => (
   <TimelineItem sx={{ minHeight: '3rem', width: '100%' }}>
-    <CustomTimelineSeparator profile={profile}/>
+    <CustomTimelineSeparator profile={profile} />
     <TimelineContent sx={{ flexWrap: 'nowrap' }}>
       {link ?
-         <Typography fontSize={15} fullWidth ><span>{title}: <a className='link description-color' href={link} target="_blank">{text}</a></span></Typography>
-        : 
-        experience || education ? 
-        <Box>
-             <Typography fontSize={16} className="title-color" >{title} </Typography>
-             <Typography fontSize={13} className="description-color">{date} </Typography>
-             <Typography fontSize={15} className="description-color">{text} </Typography>
-        </Box> 
-          : 
-        <Typography fontSize={15} className="description-color" ><span className="title-color">{title}:</span> {text}</Typography>}
+        <Typography fontSize={15} fullWidth ><span>{title}: <a className='link description-color' href={link} target="_blank">{text}</a></span></Typography>
+        :
+        experience || education ?
+          <Box>
+            <Typography fontSize={16} className="title-color" >{title} </Typography>
+            <Typography fontSize={13} className="description-color">{date} </Typography>
+            <Typography fontSize={15} className="description-color">{text} </Typography>
+          </Box>
+          :
+          <Typography fontSize={15} className="description-color" ><span className="title-color">{title}:</span> {text}</Typography>}
     </TimelineContent>
   </TimelineItem>
 )
 
 const Profile = () => {
+
   return (<Box sx={containerStyles} className="profile container">
     <Typography variant="h6" className="title title-color ">{name}</Typography>
     <Typography className="description description-color" >{role}</Typography>
@@ -55,7 +56,8 @@ const Profile = () => {
         ))}
       </CustomTimeline>
     </Box>
-    <CustomButton text="download CV" icon={<DownloadForOfflineIcon />} />
+    <CustomButton text="download CV" icon={<DownloadForOfflineIcon />}
+    />
   </Box>)
 };
 
