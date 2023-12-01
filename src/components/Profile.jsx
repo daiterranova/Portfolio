@@ -44,7 +44,7 @@ const Profile = () => {
     <Typography variant="h6" className="title title-color ">{name}</Typography>
     <Typography className="description description-color" >{role}</Typography>
     <Box className="profile-image">
-      <img src="src/assets/profile_photo.jpg" alt="profile image" />
+      <img src="./assets/profile_photo.jpg" alt="profile image" />
     </Box>
     <Box className="profile-information">
       <CustomTimeline icon={<Face3Icon fontSize="large" />} >
