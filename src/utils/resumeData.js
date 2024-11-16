@@ -91,16 +91,6 @@ const profileData = {
             ]
         },
         {
-            tag: 'HTML/CSS',
-            image: './assets/personas-it.png',
-            title: 'Personas IT Landing Page',
-            description: 'Landing Page for Personas IT Company',
-            links: [
-                { link: 'https://github.com/daiterranova/PersonasIT-First-Challenge', icon: faGithub }
-            ]
-        },
-
-        {
             tag: 'React',
             image: './assets/meals.png',
             title: 'Meals finder',
