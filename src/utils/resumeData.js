@@ -5,7 +5,7 @@ import { faPalette, faEye, faGears, faHandHoldingHand, faLinesLeaning, faMagnify
 
 const profileData = {
     name: 'Daiana Terranova',
-    role: 'Frontend Web Developer',
+    role: 'Fullstack Web Developer',
     title: 'Personal Data',
     email: 'daiana.terranova@gmail.com',
     socials: {
