@@ -20,7 +20,7 @@ const profileData = {
             icon: LinkedInIcon
         }
     },
-    about: 'Fullstack Web Developer nearly two years of  professional experience, proficiency in React, CSS, HTML, JavaScript, JS Libraries, and MUI library. Experienced in backend development with Django, Postresql, ElasticSearch, and Python. I am skilled at crafting user-focused, high-impact solutions both independently and as part of cross-functional teams. Currently learning about system design patterns, testing with unittest/pytest and github actions.Additionally, my professional experience includes a solid expertise in risk analysis, dedication to customer service and experience managing,  coordinating and mentoring people.Outside of work, I am passionate about learning from others in the community and collaborating toward the common good.',
+    about: 'Fullstack Web Developer with nearly two years of professional experience, proficiency in React, CSS, HTML, JavaScript, JS Libraries, and MUI library. Experienced in backend development with Django, PostgreSQL, ElasticSearch, and Python. I am skilled at crafting user-focused, high-impact solutions independently and as part of cross-functional teams. Currently learning about system design patterns and testing with unittest/pytest suites and GitHub actions. Additionally, my professional experience includes a solid expertise in risk analysis, dedication to customer service and experience managing,  coordinating and mentoring people. Outside of work, I am passionate about learning from others in the community and collaborating toward the common good.',
     experiences: [
         {
             title: 'FullStack Developer, Presidencia de la Nación',
