@@ -30,7 +30,7 @@ export const CustomTimelineItemData = ({ title, text, link, experience, educatio
         experience || education ?
           <Box>
             <Typography fontSize={16} className="title-color" >{title} </Typography>
-            <Typography fontSize={13} className="description-color">{date} </Typography>
+            <Typography fontSize={14} className="description-color">{date} </Typography>
             <Typography fontSize={15} className="description-color">{text} </Typography>
           </Box>
           :

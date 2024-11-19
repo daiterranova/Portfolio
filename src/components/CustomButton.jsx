@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 const CustomButton = ({ text, icon }) => {
     const downloadFile = () => {
-        const fileUrl = '../assets/Daiana-Terranova-Resume.pdf';
+        const fileUrl = '../assets/CV-English.pdf';
         const link = document.createElement('a');
         link.href = fileUrl;
         link.download = 'Daiana-Terranova-Resume.pdf';
