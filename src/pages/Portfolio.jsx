@@ -20,6 +20,12 @@ const Portfolio = () => {
     gap: '2rem',
     padding: '2rem'
   }
+  const cardStyles = {
+    width: { xs: '100%', sm: 400 },
+    height: { xs: 'auto', sm: 300 },
+    display: 'flex',
+    flexDirection: 'column',
+  }
 
 
   return (
@@ -54,10 +60,10 @@ const Portfolio = () => {
       <Grid container item spacing={3} alignItems='center' justifyContent='center' >
         {projects.map((project) => (
           tabValue == project.tag || tabValue == 'All' ?
-            <Grid container item xs={6} key={project.image}>
+            <Grid container item xs={12} sm={6} key={project.image}>
               <Grow in timeout={1000}>
-                <Card sx={{ width: '100%' }} onClick={() => { setProjectD(project) }}>
-                  <CardActionArea>
+                <Card sx={cardStyles} onClick={() => { setProjectD(project) }}>
+                  <CardActionArea sx={{ flex: 1, display: 'flex', flexDirection: 'column', width: '100%' }}>
                     <CardMedia
                       component="img"
                       height="140"
@@ -65,7 +71,11 @@ const Portfolio = () => {
                       alt={project.title}
                       title={project.title}
                     />
-                    <CardContent>
+                    <CardContent sx={{
+                      flex: 1,
+                      width: '100%',
+                      boxSizing: 'border-box'
+                    }}>
                       <Typography gutterBottom variant="h5" component="div">
                         {project.title}
                       </Typography>
